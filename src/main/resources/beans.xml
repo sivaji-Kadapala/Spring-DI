@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<!-- id is object,class is fully classified name of real class -->
+	<!-- Student student=new Student();
+		 student.setStudentName("Sivaji kadapala"); -->
+	<bean id="student" class="com.setter.Student">
+	<!-- Spring injecting literals,In this spring expecting setter like SetStudentName that is present real like studentName -->
+	<property name="studentName" value="Sivaji kadapala"></property>
+	<property name="id" value="19" ></property>
+	</bean>
+	<bean id="student1" class="com.setter.Student">
+	<!-- Spring injecting literals,In this spring expecting setter like SetStudentName that is present real like studentName -->
+	<property name="studentName" value="Sivaji kadapala1"></property>
+	<property name="id" value="191"></property>
+	</bean>
+	
+	
+	
+	
+</beans>
